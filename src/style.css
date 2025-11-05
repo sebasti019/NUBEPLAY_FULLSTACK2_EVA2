@@ -1,0 +1,85 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 70px;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.badge-animado {
+  animation: pop 0.3s ease;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #0d6efd; /* azul bootstrap */
+  text-decoration: underline;
+}
+
+/* animaciones nosotros */
+.equipo-card img {
+  object-fit: cover;
+  height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.equipo-card:hover img {
+  transform: scale(1.05);
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* contactanos  */
+
+.social-icon {
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: var(--nubeplay-blue);
+}
+
+/* home  */
+
+.fade-in {
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
